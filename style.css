@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+}
+
+.container{
+    background-color: #fff;
+    width: 400px;
+    height: min-content;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.search-box{
+    /* background-color: red; */
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-box input{
+     /* background-color: red; */
+     width: 80%;
+     font-size: 20px;
+     text-transform: capitalize;
+     color: #000;
+     border-radius: 10px;
+     padding-block: 8px;
+     background-color: hsl(208, 100%, 97%);
+}
+
+.search-box input::placeholder{
+    background-color: hsl(208, 100%, 97%);
+    color: #000;
+    font-weight: bold;
+}
+
+.search-box button{
+    /* background-color: red; */
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease-in-out 0.15s;
+    background-color: hsl(208, 100%, 90%);
+    font-size: 14px;
+}
+
+.search-box button:hover{
+    background-color: hsl(208, 100%, 97%);
+    color: #000;
+}
+
+.error-display{
+    margin: 10px auto;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.weather-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 8px;
+}
+
+.weather-body img{
+    width: 50%;
+}
+
+.weather-box{
+    margin-block: 10px;
+    text-align: center;
+}
+
+.weather-box .temperature{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.weather-box .temperature sup{
+    /* background-color: red; */
+    font-size: 20px;
+    position: absolute;
+    font-weight: 400px;
+}
+
+.weather-box .description{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.humidity,
+.wind{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+.weather-details i{
+    font-size: 26px;
+    padding: 8px;
+}
+
+.weather-details .text{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.text span{
+    /* background-color: red; */
+    font-size: 20px;
+    font-weight: bolder;
+}
